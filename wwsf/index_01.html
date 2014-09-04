@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Worldwide Storefront</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+<!--
+    <link type="text/css" rel="stylesheet" href="css/lightSlider.css" />-->
+
+    <link rel="stylesheet" href="css/superslides.css">
+    
+    <!-- Javascript -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+    <script>
+
+
+    </script>
+
+
+
+    <style>
+
+      html, body, #map-canvas {
+        margin: 0px;
+        padding: 0px;
+        position: fixed;
+        z-index: 0;
+        top: 0px;
+        width: 100%;
+        padding-bottom: 86.90%;
+        right: 0px;        
+        z-index: -999;
+        position: absolute;
+
+
+      }
+
+      #map-canvas {
+
+        top: -0.06%;
+        left: -0.04%;
+
+      }
+
+
+      .wide-container{
+
+        float: right;
+        width: 100%;
+        height: 100%;        
+        margin: 0 auto;
+        position: absolute;
+        //overflow: hidden;
+        z-index: 1;
+
+
+      }
+
+
+    </style>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+    <script src="home.js"></script>
+
+
+
+
+
+  </head>
+
+
+
+
+  <body>
+
+
+    <script>
+
+      $( document ).ready(function() {
+
+          $( ".open" ).click(function( event ) {
+       
+
+              $( ".overlay" ).css({
+                   'opacity' : '1',
+                   'pointer-events' : 'auto',
+                }),
+
+           $( ".info-text" ).css({
+                   'pointer-events' : 'auto',
+                });   
+
+          });
+
+          $( ".close" ).click(function( event ) {
+       
+              $( ".overlay" ).css({
+                   'opacity' : '0',
+                   'pointer-events' : 'none',
+                }),
+
+           $( ".info-text" ).css({
+                   'pointer-events' : 'none',
+                });     
+
+
+          });
+
+          /*
+
+          $( marker_two ).click(function( event ) {
+       
+              alert("clicked!");
+       
+          });
+           $( marker_three ).click(function( event ) {
+       
+              alert("clicked!");
+       
+          });
+                 $( marker_four ).click(function( event ) {
+       
+              alert("clicked!");
+       
+          }); */
+             
+      });
+            
+
+
+
+
+
+    </script>
+
+
+
+
+    <div id="map-canvas"></div>
+
+    <div class="overlay">
+
+             <div class="square_w_image" style="float: right;">
+              <img class="close" src="assets/icons/close_icon.png" style="width:100%; height:100%; z-index: 10; position: absolute;" />
+            </div>
+
+      <div class="information">
+
+
+        <div class="left-col">
+
+    
+          <div class="square_w_image_nav">
+              <img src="assets/still/wwsf06.png" style="width:100%; height:100%; z-index: 10; position: absolute;" />
+            </div>      
+
+          <div style="height:3px; width:100%; clear:both;"></div>
+
+
+          <div class="square_w_image_nav">
+              <img src="assets/still/wwsf07.png" style="width:100%; height:100%; z-index: 10; position: absolute;" />
+            </div>
+          <div style="height:3px; width:100%; clear:both;"></div>
+
+          <div class="square_w_image_nav">
+                <img src="assets/still/sf00.png" style="width:100%; height:100%; z-index: 10; position: absolute;" />
+              </div>      
+
+          <div style="height:3px; width:100%; clear:both;"></div>
+
+          <div class="square_w_image_nav">
+                <img src="assets/still/sf01.png" style="width:100%; height:100%; z-index: 10; position: absolute;" />
+              </div>
+
+            </div>
+
+
+
+      <div class="info-wrapper" style="height: 100%;">
+
+        <div class="info-text" style="height: 58%;">
+              <h1>Worldwide Storefront</h1><p>
+            <div style="height:3px; width:100%; clear:both;"></div>
+
+              <div class="textbox" style="font-size: 1.25em;">
+                  Storefront for Art and Architecture announces a call for proposals for WorldWide Storefront ("WWSF"), a new initiative to provide a simultaneous, multi-locus of alternative spaces around the globe and a digital platform for the expression and exchange of latent desires within contemporary art and architecture practices.<p>   
+                     <div style="height:1em; width:100%; clear:both;"></div>
+
+                  WorldWide Storefront is a mode of action; its aim is to unveil, produce and discuss experimental cultural works on a global scale from local points of view. By using the ability of contemporary means of communication to join space, undo place and avoid time, WorldWide Storefront provides leadership in imagining future modes of cultural production.<p>
+
+                    <div style="height:1em; width:100%; clear:both;"></div>
+
+                  Storefront is seeking proposals from individuals or collectives across the globe with curatorial visions that articulate alternative positions within their particular context. Proposals should contain a two-month installation, series of exhibitions and/or events and identify a specific site where the project will be realized in relationship to the curatorial vision. Strong proposals
+                  will explore new spaces of cultural action that defy traditional notions of "gallery," "pavilion," or "cultural institution." Proposals should also propose new and innovative ways to digitally engage audiences globally.<p>
+
+
+                    <div style="height:1em; width:100%; clear:both;"></div>
+
+                  All proposals will be reviewed by an international jury of notables in the
+                  fields of art and architecture. Selected entries will be part of the WorldWide Storefront program and individuals will receive $1,000 in seed funding to start their project, as well as strategic outreach support and technical and logistical mentorship. From September 19 to November 21, 2014, all selected entries throughout the world will simultaneously open and have a two-month program of exhibitions and events. All events will be recorded and broadcast through the WorldWide Storefront online platform and presented at the Storefront for Art and Architecture Gallery in New York, which will operate as the central situation room.<p>
+
+                    <div style="height:1em; width:100%; clear:both;"></div>
+
+                  For additional information and instruction on how to submit, please download the document on the right hand side of this page. All proposals must be received by January 31, 2014.
+                  </div>
+
+        </div>
+      </div>
+
+      </div>
+
+
+    </div>
+
+
+  <!-- row 1 -->
+
+
+    <div class="row"> 
+      <div class="square_w_image" >
+        <img class="open" src="assets/gif/w1.gif" style="width:100%; height:100%; z-index: 10; position: absolute;" />
+      </div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>      
+
+      <div class="square_w_image">
+        <img class="open" src="assets/gif/sf1.gif" style="width:100%; height:100%; z-index: 10; position: absolute;" />
+      </div>
+
+
+      <div class="two-squares" style="margin: auto 0; ">
+
+
+
+       <!-- <div class="colorband-one-mod"></div> -->
+       <!--
+
+        <img src="http://lorempixel.com/g/801/300/fashion" style="width: 100%; height: 100%; z-index:-1; position: absolute;" />
+      </div>
+  -->    
+
+
+  <!--<div class="wide-container">
+          <div id="slides">
+                <div class="slides-container">
+
+                  <img src="http://lorempixel.com/801/400/fashion" alt="Cinelli">
+
+                  <img src="http://lorempixel.com/200/100/sports" alt="Surly">
+
+                  <img src="http://lorempixel.com/200/100/nightlife" alt="Cinelli">
+
+                  <img src="http://lorempixel.com/200/100/nature" alt="Affinity">
+                </div>
+
+      <nav class="slides-navigation">
+        <a href="#" class="next">Next</a>
+        <a href="#" class="prev">Previous</a>
+      </nav>
+    </div>
+  </div>
+-->
+
+
+        <div class="wide-container">
+
+              <div id="slides">
+                <div class="slides-container">
+                  <img src="http://lorempixel.com/801/400/fashion" alt="Cinelli">
+                  <img src="http://lorempixel.com/801/400/sports" alt="Surly">
+                  <img src="http://lorempixel.com/801/400/nightlife" alt="Cinelli">
+                  <img src="http://lorempixel.com/801/400/nature" alt="Affinity">
+                </div>
+
+
+<!--
+                <nav class="slides-navigation">
+                  <a href="#" class="next">Next</a>
+                  <a href="#" class="prev">Previous</a>
+                </nav> -->
+
+              </div>
+
+        </div>
+
+
+
+        <script src="js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
+
+        <script>
+          $(function() {
+            $('#slides').superslides({
+              hashchange: true,
+              play: 1200,
+              inherit_width_from: '.wide-container',
+              inherit_height_from: '.wide-container'
+            });
+
+            $('#slides').on('mouseenter', function() {
+              $(this).superslides('stop');
+              console.log('Stopped')
+            });
+            $('#slides').on('mouseleave', function() {
+              $(this).superslides('start');
+              console.log('Started')
+            });
+          });
+        </script>
+
+
+
+
+<!--
+        <audio id="player" controls="controls" autoplay="true" loop="loop">
+        <source src="song.php" type="audio/mpeg" />
+        </audio>
+-->
+
+
+
+  </div>
+
+
+
+
+
+
+  <!-- row 2 -->
+
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square_last_col"></div>
+
+  <!-- row 3 -->
+
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square_last_col"></div>
+
+  <!-- row 4 -->
+
+      <div class="square_w_image">
+         <img class="open" src="assets/gif/w2.gif" style="width:100%; height:100%; z-index: 10; position: absolute;" />
+      </div>
+
+      <div class="square"></div>
+      <div class="square"></div>
+
+      <div class="square"></div>
+      <div class="square_w_image">
+        <img class="open" src="assets/still/sf00.png" style="width:100%; height:100%; z-index: 10; position: absolute;" />
+      </div>
+
+
+      </div>
+
+      <div class="square"></div>
+
+      <div class="square_last_col" style="pointer-events: none;">       <img src="assets/still/calendar.jpg" style="width:100%; height:100%; z-index: 10; position: absolute;" /></div>
+
+
+
+
+
+
+  <!-- row 5 -->
+
+      <div class="square_w_image">
+        <img src="assets/gif/hash1.gif" style="width:100%; height:100%; z-index: 10; position: absolute;" />
+      </div> 
+
+
+
+
+
+      <div class="square" style="border: none;"></div>
+      <div class="square" style="border: none;"></div>
+      <div class="square" style="border: none;"></div>
+
+
+      <div class="square"></div>
+
+
+      <div class="square_w_image">
+        <img src="assets/still/audio.png" style="width:100%; height:100%; z-index: 10; position: absolute;" />
+      </div>
+    
+      <div class="square_last_col"></div>
+
+
+  <!-- row 6 -->
+
+
+  
+
+      <div class="square"></div>
+
+
+
+
+
+
+
+      <div class="video_home">
+
+          <div class="embed-container">
+
+
+            <iframe src="http://player.vimeo.com/video/64705340?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933&amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="margin-top:-1px; padding-top:0px; bottom: 0px;">Loading</iframe>
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+      <div class="square_w_image">
+        <img src="assets/gif/hash2.gif" style="width:100%; height: 100%; z-index: 10; position: absolute;" />
+      </div>
+      <div class="square"></div>
+      <div class="square_last_col"></div>
+
+
+
+  <!-- row 7 -->
+
+
+
+  <div class="row7">
+
+
+                 <div class="square_w_image">
+            <img class="open" src="assets/gif/w2.gif" style="width:100%; height:100%; z-index: 10; position: absolute;" />
+          </div>
+
+
+
+
+
+
+
+         <div class="four-squares">
+              <div class="colorband-three" style="height: 15%"></div>
+
+            <div style="margin-top: 2em; padding: 0.5em; position: relative;"> 
+
+        <iframe src ="http://entirelynew.net/wwsf/blog" width="100%" height="100%" style="overflow: scroll;">Loading
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+     </div>
+
+         </div>
+
+           <div class="big_icon">
+
+            <img src="assets/gif/w4large.gif" style="width:100%; height:100.14%; position: absolute; top:0;" />
+          </div>
+
+
+    </div>
+
+
+
+
+
+  </body>
+</html>
