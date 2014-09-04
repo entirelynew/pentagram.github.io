@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Worldwide Storefront</title>
+    
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+
+    <style>
+
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        position: fixed;
+        z-index: 0;
+
+        top: 0px;
+        width: 100%;
+        height: 1200px;
+        z-index: 0;
+        position: absolute;
+
+
+      }
+
+
+    </style>
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+<!--
+    <script src="home.js"></script>
+-->
+
+    <script type="text/javascript" src="gmap3.min.js"></script>
+    
+
+
+
+
+
+    <script>
+
+      $(document).ready(function(){
+        $("#map-canvas").gmap3({ 
+
+            map:{
+              options:{
+                center:[16.467694, -42.932149],
+                zoom:3,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                mapTypeControlOptions: {
+                   mapTypeIds: [google.maps.MapTypeId.ROADMAP, "style1"],
+
+                }
+              }
+            },
+            styledmaptype:{
+              id: "style1",
+              options:{
+                name: "Style 1"
+              },
+              styles: [
+                {
+                  stylers: [
+                    { hue: '#fff' },
+                    { visibility: 'on' },
+                    { gamma: 0.57 },
+                    { weight: 0.4 },
+                    { saturation: -100 }
+
+                  ]
+                }
+              ]
+            }
+          },
+          { marker:{
+              values:[
+                {latLng:[48.8620722, 2.352047], options:{icon: "icon-11.png"}},
+
+                {address:"Toronto, Canada", options:{icon: "icon-1.png"}},
+
+                {address:"Santo Domingo", options:{icon: "icon-2.png"}},
+
+                {address:"Los Angeles", options:{icon: "icon-3.png"}},
+
+                {address:"Athens, Greece", options:{icon: "icon-4.png"}},
+
+                {address:"Tel Aviv, Israel", options:{icon: "icon-5.png"}},
+
+                {address:"St. Paul, Minnesota", options:{icon: "icon-6.png"}},
+
+                {address:"Greenland", options:{icon: "icon-7.png"}},
+
+                {address:"Iceland", options:{icon: "icon-8.png"}},
+
+                {address:"Los Angeles", options:{icon: "icon-9.png"}},
+
+                {address:"Montreal, Canada", options:{icon: "icon-10.png"}}                                                                
+              ],
+              options:{
+                draggable: false
+              },
+              events:{
+                onclick: function(marker, event, context){
+                  var map = $(this).gmap3("get"),
+                    infowindow = $(this).gmap3({get:{name:"infowindow"}});
+                  if (infowindow){
+                    infowindow.open(map, marker);
+                    infowindow.setContent(context.data);
+                  } else {
+                    $(this).gmap3({
+                      infowindow:{
+                        anchor:marker, 
+                        options:{content: context.data}
+                      }
+                    });
+                  }
+                },
+                mouseout: function(){
+                  var infowindow = $(this).gmap3({get:{name:"infowindow"}});
+                  if (infowindow){
+                    infowindow.close();
+                  }
+                }
+            }
+          }}
+
+
+        );
+
+
+
+
+
+      });
+
+
+
+    </script>
+
+
+
+
+  </head>
+
+
+
+
+  <body>
+
+
+    <div class="row"> 
+      <div class="square_w_image">W</div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square_w_image">world wide storefront</div>
+      <div class="square"></div>
+      <div class="square">
+<!--
+        <audio id="player" controls="controls" autoplay="true" loop="loop">
+        <source src="song.php" type="audio/mpeg" />
+        </audio>
+-->
+      </div>
+  </div>
+
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+
+      <div class="square"></div>
+      <div class="big_icon">toronto</div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+
+
+    <div class="two-square-col">
+
+
+        <div class="square-col-w-image"></div>
+      <div class="square-col"></div>
+
+    </div>
+
+
+
+
+
+
+
+      <div class="video_home">
+
+       <!-- <div class="colorband-one"></div> -->
+<!--
+        <div class="js-video [vimeo, widescreen]">
+              <iframe class="player" src="//player.vimeo.com/video/19385644" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><p><a href="http://vimeo.com/19385644">Eva Franch - Director of Storefront for Art and Architecture, New York</a> from <a href="http://vimeo.com/user5889712">Think Space</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        </div>
+-->
+
+      video goes here
+      </div>
+    <div class="two-square-col">
+
+
+        <div class="square-col-w-image"></div>
+      <div class="square-col"></div>
+
+    </div>
+
+      <div class="two-square-col">
+
+
+        <div class="square-col"></div>
+        <div class="square-col"></div>
+
+      </div>
+
+      <div class="two-square-col">
+
+
+        <div class="square-col"></div>
+        <div class="square-col"></div>
+
+      </div>
+
+
+      <div class="five">
+
+        storefront
+
+      </div>
+
+      <div class="big_icon" style="margin-top:-200px;">
+
+              large icon
+      </div>
+
+
+    <div id="map-canvas"></div>
+
+
+
+    <div id="my_map"></div>
+  </body>
+</html>
